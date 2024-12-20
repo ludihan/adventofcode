@@ -31,7 +31,7 @@ def is_valid2(x: list) -> bool:
     return sum(filter(lambda x: x, a)) >= 1
 
 
-with open('input.txt') as f:
+with open("input.txt") as f:
     input = [list(map(int, x.split())) for x in f.read().splitlines()]
-    print('p01:', len(list(filter(is_valid1, input))))
-    print('p02:', len(list(filter(is_valid2, input))))
+    print("p01:", len(list(filter(is_valid1, input))))
+    print("p02:", len(list(filter(is_valid2, input))))
